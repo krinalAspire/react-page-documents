@@ -49,7 +49,7 @@ const ButtonComponent = ({isActive,buttonId , name }) => {
         variant="contained"
         startIcon={<ResizableIcon />}
         size="medium"
-        endIcon={selectedButtons.includes(buttonId) ?<CheckCircleIcon sx={{position:"absolute", bottom:"42%", right:7}}/>:null}
+        endIcon={selectedButtons.includes(buttonId) ?<CheckCircleIcon sx={{position:"absolute", bottom:"42%", right:7 , translate:"translateY(1px)"}}/>:null}
         //className={isActive ? "active" : null}
         // onClick={handleClose}
         onClick={() => handleButtonClick(buttonId)}
@@ -67,9 +67,12 @@ const ButtonComponent = ({isActive,buttonId , name }) => {
           ml: 1,
             ":hover": {
               bgcolor: selectedButtons.includes(buttonId) ? "#9F77EB": "#D3D3D3",
-              // background:selectedButtons.includes(buttonId) ? "#9F77EB": "#D3D3D3",
               color: selectedButtons.includes(buttonId) ? "white": "black", 
             },
+            // ":hover": {
+            //   bgcolor: "#9F77EB",
+            //   color: "white", 
+            // },
             // '&:active': {
             //   boxShadow: 'none'},          
         }}
