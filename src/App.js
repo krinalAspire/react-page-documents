@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Backdrop from '@mui/material/Backdrop';
 import Button from '@mui/material/Button';
-import Component2 from './Component2'
+import Component2 from './Component2';
 
 export default function SimpleBackdrop() {
   
@@ -12,10 +12,9 @@ export default function SimpleBackdrop() {
     setOpen(true);
   };
 
-  // const handleClose = () => {
-  //   setIsActive(!isActive)
-  //   // setOpen(false);
-  // }
+  const handleClose = () => {
+    setOpen(false);
+  }
 
   return (
     <div>
@@ -24,8 +23,7 @@ export default function SimpleBackdrop() {
         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={open}
       >
-       {/* <Component />  */}
-       <Component2  isActive={isActive}/>
+       <Component2  isActive={isActive} handleClose={handleClose}/>
       </Backdrop>
     </div>
   );

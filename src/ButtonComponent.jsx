@@ -65,14 +65,14 @@ const ButtonComponent = ({isActive,buttonId , name }) => {
           position:"relative",
           // justifyContent:"flexDirection: 'column-reverse', alignItems: 'flex-end'",
           ml: 1,
-            ":hover": {
-              bgcolor: selectedButtons.includes(buttonId) ? "#9F77EB": "#D3D3D3",
-              color: selectedButtons.includes(buttonId) ? "white": "black", 
-            },
             // ":hover": {
-            //   bgcolor: "#9F77EB",
-            //   color: "white", 
+            //   bgcolor: selectedButtons.includes(buttonId) ? "#9F77EB": "#D3D3D3",
+            //   color: selectedButtons.includes(buttonId) ? "white": "black", 
             // },
+            ":hover": {
+              bgcolor: "#9F77EB",
+              color: "white", 
+            },
             // '&:active': {
             //   boxShadow: 'none'},          
         }}

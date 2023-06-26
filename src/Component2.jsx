@@ -15,18 +15,9 @@ import {
 import CardComponent2 from "./CardComponent2";
 
 function Component2({ handleClose , isActive}) {
-  // const [open, setOpen] = React.useState(true);
 
-  // const handleClose = () => {
-  //   console.log("open",open);
-  //   setOpen(!open);
-  // };
-  // const handleOpen = () => {
-  //   setOpen(true);
-  // };
   return (
-    <Card sx={{ width: "65vw", height: "95vh" }}>
-      <CardActionArea>
+    <Card sx={{ width: "65vw", height: "95vh", overflow:"auto" }}>
         <CardHeader
           sx={{
             backgroundColor: "#d3d3d3",
@@ -68,7 +59,9 @@ function Component2({ handleClose , isActive}) {
             workplace. You can add more later.
           </Typography>
           <div>
-            <CardComponent2 isActive={isActive} handleClose={handleClose} />
+            <CardComponent2 
+              isActive={isActive} handleClose={handleClose}
+               />
           </div>
 
           <div>
@@ -78,7 +71,6 @@ function Component2({ handleClose , isActive}) {
               Workplace Name
             </Typography>
             <TextField
-              // defaultValue={"hello"}
               id="outlined-basic"
               variant="outlined"
               fullWidth
@@ -86,7 +78,6 @@ function Component2({ handleClose , isActive}) {
             />
           </div>
         </CardContent>
-      </CardActionArea>
       <CardActions>
       
         <Button
@@ -107,7 +98,6 @@ function Component2({ handleClose , isActive}) {
         >
           Create Documents
         </Button>
-        {/* </div> */}
       </CardActions>
     </Card>
   );

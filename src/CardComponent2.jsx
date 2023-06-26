@@ -23,7 +23,8 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
         flexGrow: 1,
         border: "1px solid #D3D3D3",
         overflow: "auto",
-        maxHeight: "auto",
+        // maxHeight: "20vh",
+        maxHeight:"auto",
       }}
       pl={2}
       pr={3}
@@ -43,7 +44,7 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
         columns={{ xs: 4, sm: 8, md:12 }}
         mb={3}
       >
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
           <ButtonComponent
             isActive={isActive}
             handleClose={handleClose}
@@ -51,7 +52,7 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
             buttonId="button1"
           />
         </Grid>
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
           <ButtonComponent
             isActive={isActive}
             handleClose={handleClose}
@@ -59,7 +60,7 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
             buttonId="button2"
           />
         </Grid>
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
           <ButtonComponent
             isActive={isActive}
             handleClose={handleClose}
@@ -67,7 +68,7 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
             buttonId="button3"
           />
         </Grid>
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
           <ButtonComponent
             isActive={isActive}
             handleClose={handleClose}
@@ -90,7 +91,7 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
         columns={{ xs: 4, sm: 8, md: 12 }}
         mb={3}
       >
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
           <ButtonComponent
             isActive={isActive}
             handleClose={handleClose}
@@ -98,7 +99,7 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
             buttonId="button5"
           />
         </Grid>
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
           <ButtonComponent
             isActive={isActive}
             handleClose={handleClose}
@@ -106,7 +107,7 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
             buttonId="button6"
           />
         </Grid>
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
           <ButtonComponent
             isActive={isActive}
             handleClose={handleClose}
@@ -114,7 +115,7 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
             buttonId="button7"
           />
         </Grid>
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
           <ButtonComponent
             isActive={isActive}
             handleClose={handleClose}
@@ -136,7 +137,7 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
         spacing={{ xs: 2, md: 2 }}
         columns={{ xs: 4, sm: 8, md: 12 }}
       >
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
           <ButtonComponent
             isActive={isActive}
             handleClose={handleClose}
@@ -144,7 +145,7 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
             buttonId="button9"
           />
         </Grid>
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
           <ButtonComponent
             isActive={isActive}
             handleClose={handleClose}
@@ -152,7 +153,7 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
             buttonId="button10"
           />
         </Grid>
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
           <ButtonComponent
             isActive={isActive}
             handleClose={handleClose}
@@ -160,7 +161,7 @@ export default function ResponsiveGrid({ isActive, handleClose }) {
             buttonId="button11"
           />
         </Grid>
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
           <ButtonComponent
             isActive={isActive}
             handleClose={handleClose}
